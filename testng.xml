@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Magento Test Suite">
+    <test name="Automation Exercise Functional Tests">
+        <packages>
+            <package name = "ge.tbc.testautomation"/>
+        </packages>
+    </test>
+</suite>
