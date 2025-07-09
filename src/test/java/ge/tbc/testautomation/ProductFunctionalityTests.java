@@ -9,7 +9,7 @@ import static ge.tbc.testautomation.data.Constants.*;
 @Feature("Product Browsing and Interaction")
 public class ProductFunctionalityTests extends BaseTest {
 
-    @Test(groups={"[Scenario Name – (SCRUM-T36)]"})
+    @Test(groups={"[კატეგორიის პროდუქტების შესაბამისობა – (SCRUM-T36)]"})
     @Story("Category Navigation")
     @Description("Verify that user can navigate through Women > Dress and Men > Jeans categories, and correct titles and products are displayed.")
     @Severity(SeverityLevel.NORMAL)
@@ -27,7 +27,7 @@ public class ProductFunctionalityTests extends BaseTest {
                 .verifyEachProductContainsExpectedTitle(JEANS);
     }
 
-    @Test(groups={"[Scenario Name – (SCRUM-T37)]"})
+    @Test(groups={"[პროდუქტების და პროდუქტის დეტალების გვერდი – (SCRUM-T37)]"})
     @Story("Product Detail Validation")
     @Description("Verify that product title and details are consistent between All Products page and Product Details page.")
     @Severity(SeverityLevel.CRITICAL)
@@ -48,7 +48,7 @@ public class ProductFunctionalityTests extends BaseTest {
                 .validateProductBrandIsDisplayed();
     }
 
-    @Test(groups={"[Scenario Name – (SCRUM-T38)]"})
+    @Test(groups={"[პროდუქტზე მიმოხილვის დამატება – (SCRUM-T38)]"})
     @Story("Product Review Submission")
     @Description("Verify that user can submit a review on the product detail page and a success message is shown.")
     @Severity(SeverityLevel.NORMAL)
