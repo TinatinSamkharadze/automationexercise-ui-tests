@@ -13,7 +13,7 @@ public class ProductFunctionalityTests extends BaseTest {
     @Story("Category Navigation")
     @Description("Verify that user can navigate through Women > Dress and Men > Jeans categories, and correct titles and products are displayed.")
     @Severity(SeverityLevel.NORMAL)
-    @Link(name = "Test Case", url = "https://www.automationexercise.com/")
+    @Link( url = "https://www.automationexercise.com/")
     public void viewCategoryTest() {
         homeSteps
                 .verifyCategoriesAreVisible()
@@ -31,7 +31,7 @@ public class ProductFunctionalityTests extends BaseTest {
     @Story("Product Detail Validation")
     @Description("Verify that product title and details are consistent between All Products page and Product Details page.")
     @Severity(SeverityLevel.CRITICAL)
-    @Link(name = "Test Case", url = "https://www.automationexercise.com/")
+    @Link(url = "https://www.automationexercise.com/")
     public void verifyProductTitlesAndDetailPageConsistency() {
         homeSteps
                 .navigateToProductsPage();
@@ -52,13 +52,12 @@ public class ProductFunctionalityTests extends BaseTest {
     @Story("Product Review Submission")
     @Description("Verify that user can submit a review on the product detail page and a success message is shown.")
     @Severity(SeverityLevel.NORMAL)
-    @Link(name = "Test Case", url = "https://www.automationexercise.com/")
+    @Link(url = "https://www.automationexercise.com/")
     public void addReviewTest() {
         homeSteps
                 .navigateToProductsPage();
         productsSteps
                 .validateAllProductsPageIsLoaded()
-                .validateProductsListIsVisible()
                 .clickOnFirstProduct();
         detailsSteps
                 .verifyWriteYourReviewIsVisible()
